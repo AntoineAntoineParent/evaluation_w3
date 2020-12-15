@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="eval.css">
     <script src="https://kit.fontawesome.com/aeb1e90743.js" crossorigin="anonymous"></script>
 
-    <title>Nouve onglet</title>
+    <title>Google</title>
 </head>
 
 <body>
@@ -15,40 +15,66 @@
 
         <header>
             <div id="hautdroit">
-                <p> <span>Gmail</span>
-                    <span id="image">Images</span>
-                    <span id="logoc"><i class="fas fa-th"></i></span>
-                    <span id="connexion">Connexion</span></p>
+                <p> <span><a href="https://www.google.com/intl/fr/gmail/about/">Gmail</a></span>
+                    <span id="image"><a href="https://www.google.fr/imghp?hl=fr">Images</a></span>
+                    <span id="logoc"><a href="https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox&hl=fr&gl=US"><i class="fas fa-th"></i></a></span>
+                    <button id="connexion" onclick="window.location.href='https://myaccount.google.com/?utm_source=sign_in_no_continue';">Connexion</button>
             </div>
         </header>
 
 
         <div id="principal">
             <div id="logog"><img src="google.gif" alt="l'image de google"></div>
-            <div id="blockbas">
-                <div id="barre">
-                    <i class="fas fa-search"></i>
-                    <input type="search" id="Barre">
-                </div>
-                <div id="sousbarre">
-                    <span id="recherche">Recherche Google</span>
-                    <span id="chance">J'ai de la chance</span>
-                </div>
-            </div>
+        </div>
+
+        <div id="barre">
+            <block id="block"> <i id="loupe" class="fas fa-search"></i><input type="search" id="Barre"></block>
+        </div>
+
+        <div id="sousbarre">
+            <button id="recherche">Recherche Google</button>
+            <button id="chance">J'ai de la chance</button>
         </div>
 
 
+
+        <div id="invisible"></div>
+
         <footer>
             <div id="fr">
-                <p>France</p>
+                France
             </div>
             <div id="basdepage">
-                <div id="basgauche">Publicité Entreprise A propos Comment fonctionne la recherche Google?</div>
-                <div id="basdroite">Info Consommateurs Confidentialité Conditions Paramètres</div>
-            </div>
+                <div id="basgauche">
+                    <div>
+                        <a href="https://ads.google.com/intl/fr_fr/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2m--ahpm-0000000055-0000000002&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">
+                        Publicité</a></div>
+                    <div>
+                        <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">
+                    Entreprise</a>
+                    </div>
+                    <div>
+                        <a href="https://about.google/?utm_source=google-FR&utm_medium=referral&utm_campaign=hp-footer&fg=1">
+                    A propos</a>
+                    </div>
+                    <div>
+                        <a href="https://www.google.com/search/howsearchworks/?fg=1">Comment fonctionne la recherche Google?</a>
+                    </div>
+                </div>
+                <div id="basdroite">
+                    <div><a href="https://support.google.com/websearch/answer/7585859?p=fr_consumer_info&hl=fr&fg=1&visit_id=637436342994970189-1857908778&rd=1">
+                        Info</a></div>
+                    <div><a href="https://policies.google.com/privacy?hl=fr&fg=1">
+                        Consommateurs</a></div>
+                    <div><a href="https://policies.google.com/terms?hl=fr&fg=1">
+                        Confidentialité</a></div>
+                    <div><a href="https://www.google.com/preferences?hl=fr&fg=1">
+                        Conditions Paramètres</a></div>
+
+                </div>
         </footer>
 
-    </div>
+        </div>
 
 </body>
 

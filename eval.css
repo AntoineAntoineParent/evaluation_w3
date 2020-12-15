@@ -1,3 +1,10 @@
+* {
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.05em;
+}
+
 #lapage {
     width: 100%;
     height: 100%;
@@ -16,6 +23,14 @@ header {
 #hautdroit {
     width: auto;
     height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+a,
+a:hover {
+    color: black;
+    text-decoration: none;
 }
 
 #connexion,
@@ -26,9 +41,10 @@ header {
 
 #connexion {
     margin-top: 17px;
-    height: 28px;
+    width: 125px;
+    height: 40px;
     margin-right: 10px;
-    font-size: medium;
+    font-size: 1.05em;
     font-family: 'Poppins', sans-serif;
     background-color: #4285F4;
     border-radius: 5%;
@@ -37,40 +53,58 @@ header {
     text-decoration: none;
 }
 
-#principal {
-    width: auto;
-    height: 300px;
+#principal,
+#barre,
+#sousbarre {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 #Barre {
     width: 15cm;
     height: 1cm;
     border-radius: 2cm;
+    border: none;
+    outline: none;
+}
+
+#block {
+    border: solid 2px lightgray;
+    border-radius: 30px;
+    height: auto;
+    width: auto;
+}
+
+#loupe {
+    margin-left: 15px;
 }
 
 #sousbarre {
-    display: flex;
-    justify-content: space-around;
+    margin: 25px;
 }
 
 #recherche,
 #chance {
-    margin-top: 17px;
-    height: 28px;
-    font-size: medium;
+    margin-top: 25px;
+    margin: 10px;
+    width: 200px;
+    height: 45px;
+    font-size: 1.05em;
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(168, 183, 197);
+    background-color: rgb(243, 243, 243);
     border-radius: 5%;
-    border: rgb(168, 183, 197);
-    color: white;
+    border: rgb(243, 243, 243);
+    color: black;
+}
+
+#invisible {
+    width: auto;
+    height: 15.9cm;
 }
 
 footer {
-    background-color: rgb(168, 183, 197);
+    background-color: rgb(243, 243, 243);
     width: auto;
     height: auto;
     display: flex;
@@ -78,7 +112,39 @@ footer {
 }
 
 #basdepage {
-    border-top: 1px solid rgb(145, 159, 172);
+    border-top: 1px solid rgb(206, 206, 206);
+    width: auto;
+    height: 40px;
     display: flex;
     justify-content: space-between;
+}
+
+#fr {
+    width: auto;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#basgauche {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2px;
+}
+
+#basgauche>div {
+    margin: 10px;
+}
+
+#basdroite {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 8px;
+}
+
+#basdroite>div {
+    margin: 5px;
 }
